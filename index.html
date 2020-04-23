@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <style>
+
+
+:root{
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+}
+
+
+html body {
+  margin:auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+#form {
+
+margin:10 10 10 20px;
+
+}
+
+
+input {
+  border: 1px solid var(--DesaturatedRed);
+  text-indent: 25px;
+  color: var(--DesaturatedRed);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 80%;
+  border-radius: 25px;
+  width: 90%;
+  height: 50px;
+
+}
+
+.btn {
+  background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 40px;
+  box-shadow: -1px 15px 20px rgba(3, 3, 3, .1);
+  border: none;
+  height:55px;
+  width:80px;
+  margin-left:-50px;
+  color:#ffffff;
+  font-size:15px;
+}
+
+@media screen and (min-width:376px){
+  #mobile-hero {
+  visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+.container {
+    height: 100%;
+    display:grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:50px 300px 150px 150px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+}
+
+.container > div:nth-child(even){
+  background-color:white;
+
+}  
+
+
+.container > div:nth-child(odd){
+  background-color:white;
+}
+
+#logo {
+  padding: 25px 25px 25px 30px;
+  
+}
+
+.ba-logo {
+  width:32%;
+  height:auto;
+}
+
+#mobile-hero {
+ width:375px;
+ height:260px;
+ object-fit: cover;
+ margin:auto;
+}
+
+#intro {
+  text-align: center;
+  letter-spacing:10px;
+  padding: 25px 25px 25px 25px;
+  font-size:38px;
+  text-transform: uppercase;
+  line-height: 45px;
+ 
+}
+
+#info {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding:5px 10px 5px 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size:16px;
+  color:hsl(0, 36%, 70%);
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="logo"><img src="images/logo.svg" class="ba-logo"></div>
+  <div id="mobile-hero"><img src="images/hero-mobile.jpg" ></div>
+
+ <div id="intro"><span style="font-weight: 300; color:hsl(0, 36%, 70%);">We're </span></span><br/><span style="font-weight: 600; color:hsl(0, 6%, 24%);">coming <br/>soon</span></div>
+
+ <div id="info">Hello fellow shoppers! We're currently building our new fashion store. 
+  Add your email below to stay up-to-date with announcements and our launch deals.</div>
+<div id="form">
+  <form>
+  <input type="email" placeholder="Email Address" required id="form-input"></input>
+<button class="btn">></button>
+</form>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Elaine Shaw</a>.
+    </p>
+  </footer>
+  </div>
+</body>
+</html>
